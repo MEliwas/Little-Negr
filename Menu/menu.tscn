@@ -1,0 +1,245 @@
+[gd_scene load_steps=30 format=3 uid="uid://dendsncmqv646"]
+
+[ext_resource type="Texture2D" uid="uid://cude8h8j0kc1n" path="res://ASSET/image.png" id="1_8wi7b"]
+[ext_resource type="Script" path="res://Menu/menu.gd" id="1_okm5b"]
+[ext_resource type="Texture2D" uid="uid://p64ss3kxyc5v" path="res://ASSET/image (1).png" id="2_tu1ub"]
+[ext_resource type="Texture2D" uid="uid://dusum7ktjqole" path="res://ASSET/image (2).png" id="3_ncuqy"]
+[ext_resource type="Texture2D" uid="uid://k5w22gseeeo7" path="res://ASSET/image (3).png" id="4_g120i"]
+[ext_resource type="Texture2D" uid="uid://3s6w6pptpq2m" path="res://ASSET/image (4).png" id="5_e7agl"]
+[ext_resource type="Texture2D" uid="uid://dh1s2a6cp2qio" path="res://ASSET/image (5).png" id="6_37h4n"]
+[ext_resource type="Texture2D" uid="uid://c3j5o54owii1y" path="res://ASSET/image (6).png" id="7_j8drm"]
+[ext_resource type="Texture2D" uid="uid://bvofikojvgmnp" path="res://ASSET/image (7).png" id="8_gg5sd"]
+[ext_resource type="Texture2D" uid="uid://dxqx0v8lssxwn" path="res://ASSET/image (8).png" id="9_h6n26"]
+[ext_resource type="Texture2D" uid="uid://b0q701njhb742" path="res://ASSET/image (9).png" id="10_1avi5"]
+[ext_resource type="FontFile" uid="uid://dvixn83kbx1dw" path="res://ASSET/шрифт 1_0.otf" id="12_1ddgx"]
+[ext_resource type="AudioStream" uid="uid://b5c8yh0veo6xr" path="res://Mus/Little Night song faster.mp3" id="13_gm337"]
+[ext_resource type="AudioStream" uid="uid://bqbfrlp3u2aso" path="res://Mus/Little Night song normal.mp3" id="14_8jlrb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nyc3"]
+atlas = ExtResource("1_8wi7b")
+region = Rect2(0, 0, 950, 519)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2y7kk"]
+atlas = ExtResource("2_tu1ub")
+region = Rect2(0, 0, 948, 516)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3b47e"]
+atlas = ExtResource("3_ncuqy")
+region = Rect2(0, 0, 947, 516)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ib7hw"]
+atlas = ExtResource("4_g120i")
+region = Rect2(0, 0, 949, 516)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35uhd"]
+atlas = ExtResource("5_e7agl")
+region = Rect2(0, 0, 949, 515)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58cut"]
+atlas = ExtResource("6_37h4n")
+region = Rect2(0, 0, 949, 515)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5lsu"]
+atlas = ExtResource("7_j8drm")
+region = Rect2(0, 0, 950, 515)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wyex"]
+atlas = ExtResource("8_gg5sd")
+region = Rect2(0, 0, 950, 514)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kwch6"]
+atlas = ExtResource("9_h6n26")
+region = Rect2(0, 0, 949, 516)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5h5o"]
+atlas = ExtResource("10_1avi5")
+region = Rect2(0, 0, 951, 514)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qn0ve"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nyc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2y7kk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3b47e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ib7hw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35uhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58cut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n5lsu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3wyex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kwch6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5h5o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_tehd5"]
+resource_name = "1"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4, 2.9, 4.7, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(81.099, 153.406), Vector2(81.099, 153.406), Vector2(84.099, 152.406), Vector2(90.099, 150.406), Vector2(87.099, 153.406)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.4, 2.9, 4.7, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(82, 277), Vector2(87, 279), Vector2(82.0625, 275.625), Vector2(88.0481, 277.942), Vector2(80, 280)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4, 2.9, 4.7, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(82, 387), Vector2(84, 390), Vector2(87.625, 395), Vector2(79.327, 380), Vector2(87, 389)]
+}
+
+[sub_resource type="Animation" id="Animation_f0pin"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(81.099, 153.406)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(80, 278)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(82, 413)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_msma0"]
+_data = {
+"1": SubResource("Animation_tehd5"),
+"RESET": SubResource("Animation_f0pin")
+}
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_c56ik"]
+streams_count = 2
+stream_0/stream = ExtResource("13_gm337")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("14_8jlrb")
+stream_1/weight = 1.0
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_okm5b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(575.803, 323.875)
+scale = Vector2(1.21432, 1.25777)
+sprite_frames = SubResource("SpriteFrames_qn0ve")
+autoplay = "default"
+frame = 8
+frame_progress = 0.318993
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 81.099
+offset_top = 153.406
+offset_right = 412.099
+offset_bottom = 235.406
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("12_1ddgx")
+theme_override_font_sizes/font_size = 70
+text = "P l a y"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 80.0
+offset_top = 278.0
+offset_right = 411.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("12_1ddgx")
+theme_override_font_sizes/font_size = 70
+text = "O p t i o n"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 82.0
+offset_top = 413.0
+offset_right = 413.0
+offset_bottom = 495.0
+theme_override_colors/font_color = Color(1, 0.245241, 0.187845, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("12_1ddgx")
+theme_override_font_sizes/font_size = 70
+text = "Q u i t "
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_msma0")
+}
+autoplay = "1"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_c56ik")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

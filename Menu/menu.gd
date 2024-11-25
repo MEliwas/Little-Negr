@@ -15,6 +15,7 @@ func _process(_delta):
 
 
 func _on_button_pressed():
+	$menu/Button.disabled = true
 	$AudioStreamPlayer3.play()
 	$AnimationPlayer.play("play")
 	await $AnimationPlayer.animation_finished

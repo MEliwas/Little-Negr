@@ -363,6 +363,7 @@ theme_override_font_sizes/font_size = 100
 text = "Q u i t "
 
 [node name="Label" type="Label" parent="menu"]
+layout_mode = 0
 offset_left = 970.0
 offset_top = 11.0
 offset_right = 1740.0

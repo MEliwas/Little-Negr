@@ -362,65 +362,78 @@ theme_override_fonts/font = ExtResource("12_1ddgx")
 theme_override_font_sizes/font_size = 100
 text = "Q u i t "
 
-[node name="light" type="Node2D" parent="."]
+[node name="Label" type="Label" parent="menu"]
+offset_left = 970.0
+offset_top = 11.0
+offset_right = 1740.0
+offset_bottom = 149.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("12_1ddgx")
+theme_override_font_sizes/font_size = 100
+text = "Little Night"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="PointLight2D5" type="PointLight2D" parent="light"]
+[node name="light" type="Node2D" parent="menu"]
+position = Vector2(-3, -1)
+
+[node name="PointLight2D5" type="PointLight2D" parent="menu/light"]
 position = Vector2(1008, 898)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D6" type="PointLight2D" parent="light"]
+[node name="PointLight2D6" type="PointLight2D" parent="menu/light"]
 position = Vector2(1558, 970)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D7" type="PointLight2D" parent="light"]
+[node name="PointLight2D7" type="PointLight2D" parent="menu/light"]
 position = Vector2(364, 724)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D8" type="PointLight2D" parent="light"]
+[node name="PointLight2D8" type="PointLight2D" parent="menu/light"]
 position = Vector2(351, 449)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D9" type="PointLight2D" parent="light"]
+[node name="PointLight2D9" type="PointLight2D" parent="menu/light"]
 position = Vector2(359, 209)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D10" type="PointLight2D" parent="light"]
+[node name="PointLight2D10" type="PointLight2D" parent="menu/light"]
 position = Vector2(1654, 724)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D11" type="PointLight2D" parent="light"]
+[node name="PointLight2D11" type="PointLight2D" parent="menu/light"]
 position = Vector2(1010, 673)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D12" type="PointLight2D" parent="light"]
+[node name="PointLight2D12" type="PointLight2D" parent="menu/light"]
 position = Vector2(1184, 334)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
 
-[node name="PointLight2D13" type="PointLight2D" parent="light"]
+[node name="PointLight2D13" type="PointLight2D" parent="menu/light"]
 position = Vector2(1598, 348)
 color = Color(1, 0, 0.101961, 1)
 energy = 3.0

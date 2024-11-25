@@ -3,7 +3,7 @@ extends CharacterBody2D
 var input_movement = Vector2.ZERO
 var speed = 200
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	move()
 
 func move():

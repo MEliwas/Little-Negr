@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dendsncmqv646"]
+[gd_scene load_steps=36 format=3 uid="uid://dendsncmqv646"]
 
 [ext_resource type="Texture2D" uid="uid://cude8h8j0kc1n" path="res://ASSET/image.png" id="1_8wi7b"]
 [ext_resource type="Script" path="res://Menu/menu.gd" id="1_okm5b"]
@@ -15,6 +15,9 @@
 [ext_resource type="AudioStream" uid="uid://b5c8yh0veo6xr" path="res://Mus/Little Night song faster.mp3" id="13_gm337"]
 [ext_resource type="AudioStream" uid="uid://bqbfrlp3u2aso" path="res://Mus/Little Night song normal.mp3" id="14_8jlrb"]
 [ext_resource type="Texture2D" uid="uid://bmeg0imu103l" path="res://ASSET/circle (1).png" id="15_luyb3"]
+[ext_resource type="AudioStream" uid="uid://yrtse71ckg5r" path="res://Mus/hit-effekt-dlya-stsenyi-ujasa-quotkrik-robotaquot-32209.mp3" id="16_e8vg8"]
+[ext_resource type="Texture2D" uid="uid://ddusf0iwn7py" path="res://ASSET/е.jpg" id="17_1avjv"]
+[ext_resource type="AudioStream" uid="uid://d0ih3s0mcmiv3" path="res://Mus/walkie-talkie-button-press_z1bs9fvd.mp3" id="18_0an6w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4nyc3"]
 atlas = ExtResource("1_8wi7b")
@@ -125,11 +128,164 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(3, 1)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer:stream_paused")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect/Е:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("DirectionalLight2D:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.6]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_a3lgn"]
+resource_name = "play"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer:stream_paused")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer2:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect/Е:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.8, 1, 1.4, 1.8, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false, true]
+}
+
+[sub_resource type="Animation" id="Animation_1ld4g"]
+resource_name = "quit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DirectionalLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.6, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -20.0]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_msma0"]
 _data = {
 "1": SubResource("Animation_tehd5"),
-"RESET": SubResource("Animation_f0pin")
+"RESET": SubResource("Animation_f0pin"),
+"play": SubResource("Animation_a3lgn"),
+"quit": SubResource("Animation_1ld4g")
 }
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_c56ik"]
@@ -171,6 +327,7 @@ offset_right = 43.0
 offset_bottom = 41.0002
 
 [node name="Button" type="Button" parent="menu"]
+layout_mode = 0
 offset_left = 115.0
 offset_top = 162.0
 offset_right = 660.0
@@ -182,6 +339,7 @@ theme_override_font_sizes/font_size = 100
 text = "P l a y"
 
 [node name="Button3" type="Button" parent="menu"]
+layout_mode = 0
 offset_left = 76.0
 offset_top = 405.0
 offset_right = 690.0
@@ -193,6 +351,7 @@ theme_override_font_sizes/font_size = 100
 text = "O p t i o n"
 
 [node name="Button2" type="Button" parent="menu"]
+layout_mode = 0
 offset_left = 152.0
 offset_top = 650.0
 offset_right = 616.0
@@ -267,6 +426,26 @@ color = Color(1, 0, 0.101961, 1)
 energy = 3.0
 texture = ExtResource("15_luyb3")
 metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_e8vg8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -6.0
+offset_right = 1828.0
+offset_bottom = 1079.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Е" type="Sprite2D" parent="ColorRect"]
+visible = false
+position = Vector2(920.5, 539.5)
+scale = Vector2(1.42891, 1.49861)
+texture = ExtResource("17_1avjv")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_0an6w")
 
 [connection signal="pressed" from="menu/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="menu/Button2" to="." method="_on_button_2_pressed"]

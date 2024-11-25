@@ -11,45 +11,36 @@ script = ExtResource("1_0g0uv")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.2, 0.2)
-motion_mirroring = Vector2(1151.98, 0)
+motion_mirroring = Vector2(1727.98, 0)
 
 [node name="1" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(576, 324)
-scale = Vector2(2, 2)
+position = Vector2(864, 486)
+scale = Vector2(3, 3)
 texture = ExtResource("2_57uu6")
-metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
-visible = false
 motion_scale = Vector2(0.3, 0.3)
-motion_mirroring = Vector2(575, 0)
+motion_mirroring = Vector2(2003, 0)
 
 [node name="2" type="Sprite2D" parent="ParallaxLayer2"]
-visible = false
-position = Vector2(576, 324)
-scale = Vector2(2, 2)
+position = Vector2(867, 486)
+scale = Vector2(3, 3)
 texture = ExtResource("3_mdc8r")
-metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
-visible = false
 motion_scale = Vector2(0.6, 0.6)
-motion_mirroring = Vector2(576.075, 0)
+motion_mirroring = Vector2(1727.89, 0)
 
 [node name="4" type="Sprite2D" parent="ParallaxLayer3"]
-visible = false
-position = Vector2(576, 324)
-scale = Vector2(2, 2)
+position = Vector2(864, 486)
+scale = Vector2(3, 3)
 texture = ExtResource("4_3fock")
-metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
-visible = false
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(575.96, 0)
+motion_mirroring = Vector2(1727.95, 0)
 
 [node name="3" type="Sprite2D" parent="ParallaxLayer4"]
-visible = false
-position = Vector2(576, 324)
-scale = Vector2(2, 2)
+position = Vector2(864, 486)
+scale = Vector2(3, 3)
 texture = ExtResource("5_lyall")
